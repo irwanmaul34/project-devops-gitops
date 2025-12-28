@@ -8,6 +8,6 @@ spec:
     app: python-app
   ports:
     - port: 80
-      targetPort: 8000
+      targetPort: 8080
   type: NodePort
 
