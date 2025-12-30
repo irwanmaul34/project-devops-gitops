@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: irwan34/python-app@sha256:d485e6f76a36868445ae19b9b4057a8711d43cf3a4f7229f9e79904cfef483fa
+          image: irwan34/python-app@sha256:83a09e366421b16020dc7b58e16034902c1ee185cae85dd08de3c8aab71ce093
           ports:
             - containerPort: 8000
 
