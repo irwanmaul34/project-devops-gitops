@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api-staging
-          image: irwan34/python-app:9319a9a299ce3d5fd71a6dce03e609098691eb07
+          image: irwan34/api-service:e11e7d6ebc4dbcdfa8705a75fd53f3fe20d1ddf7
           ports:
             - containerPort: 8000
 
