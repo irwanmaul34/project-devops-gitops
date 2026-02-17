@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: myapp-api
   namespace: production
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: myapp
+      app: myapp-api
   template:
     metadata:
       labels:
-        app: myapp
+        app: myapp-api
     spec:
       containers:
-        - name: myapp
+        - name: myapp-api
           image: irwan34/python-app@sha256:83a09e366421b16020dc7b58e16034902c1ee185cae85dd08de3c8aab71ce093
           ports:
             - containerPort: 8000

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-staging
+  namespace: staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-staging
+  template:
+    metadata:
+      labels:
+        app: api-staging
+    spec:
+      containers:
+        - name: api-staging
+          image: irwan34/python-app:9319a9a299ce3d5fd71a6dce03e609098691eb07
+          ports:
+            - containerPort: 8000
+
