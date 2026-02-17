@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: staging-app-ingress
+  namespace: staging
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+    - host: staging.myapp.local
+      http:
+        paths:
+          # API ROUTE
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: service-api-staging
+                port:
+                  number: 80
+
+          # FRONTEND ROUTE
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: service-frontend-staging
+                port:
+                  number: 80

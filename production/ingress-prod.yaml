@@ -1,0 +1,30 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: myapp-ingress
+  namespace: production
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+    - host: myapp.local
+      http:
+        paths:
+          # API ROUTE
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: service-api
+                port:
+                  number: 80
+
+          # FRONTEND ROUTE
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: service-frontend
+                port:
+                  number: 80
+
