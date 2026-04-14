@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: myapp-frontend
-          image: irwan34/frontend-service@sha256:427ad95ac7b2569b879eed5b04b155a7f7b7408e4a85cf91288805634766a3f2
+          image: irwan34/frontend-service@sha256:88e22c388449c67901b976adc7d0de4b2afd4904e8b662c319b090b1f1030b43
           ports:
             - containerPort: 8000
 
