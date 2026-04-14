@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api-staging
-          image: irwan34/api-service:d2147ddb65a1f707dd68177c985e3c2a63ba2cdc
+          image: irwan34/api-service:1631ac895d9f9e83a85b8e61b1a673001b7bec07
           ports:
             - containerPort: 8080
 
