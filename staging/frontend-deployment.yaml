@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend-staging
-          image: irwan34/frontend-service:702de9076363cdf29179ea8a6662ed91199f2d46
+          image: irwan34/frontend-service:b95724f4149b292d695aff81653c22fbbc6df730
           ports:
             - containerPort: 8080
 
