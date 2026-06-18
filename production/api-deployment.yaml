@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: myapp-api
-          image: irwan34/api-service@sha256:64bda72bc750afcdc21ff342eb5152954cdf9f836b4646447acafb1fcfce2205
+          image: irwan34/api-service@sha256:f1164588a4c83e34da77343bdde7ac167ba67d0dbfe1d95dce991ae6bfbdce69
           ports:
             - containerPort: 8000
 
