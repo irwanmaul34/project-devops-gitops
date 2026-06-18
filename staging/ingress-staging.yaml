@@ -15,7 +15,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: service-api-staging
+                name: service-api
                 port:
                   number: 80
 
@@ -24,6 +24,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: service-frontend-staging
+                name: service-frontend
                 port:
                   number: 80

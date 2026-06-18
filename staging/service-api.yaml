@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: service-api-staging
+  name: service-api
   namespace: staging
 spec:
   selector:
